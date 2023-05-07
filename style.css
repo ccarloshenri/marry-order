@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    background-color: rgb(247, 170, 250);
+}
+
+.main__principal_text {
+    padding-top: 10%;
+    font-size: 250%;
+}
+
+.main__buttons {
+    padding-top: 10%;
+}
+
+.main__button_yes {
+    background-color: green;
+    font-size: 130%;
+}
+
+.main__button_no {
+    background-color: red;
+    font-size: 130%;
+}
+
+main button {
+    cursor: pointer;
+}
+
+.gato{
+    position: absolute;
+    background-image: url("imgs/cute_cat.png");
+    background-size: cover;
+    border-radius: 10px;
+    animation: fall 4s linear infinite;
+}
+.gato2{
+    position: absolute;
+    background-image: url("imgs/cute_cat_2.png");
+    background-size: cover;
+    border-radius: 10px;
+    animation: fall 4s linear infinite;
+  }
+
+.gato3{
+    position: absolute;
+    background-image: url("imgs/cute_cat_3.png");
+    background-size: cover;
+    border-radius: 10px;
+    animation: fall 4s linear infinite;
+  }
+
+/*
+Faz o gato cair da tela
+*/
+@keyframes fall {
+    0% {
+      transform: translate(50%, 50%);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translate(50%, 1000%);
+      opacity: 0;
+    }
+  }
